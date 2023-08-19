@@ -2,23 +2,85 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>B&amp;B Air Care - Home</title>
-		<meta name="author" content="Alex W. Burrell">
-		<meta name="description" content="Home of B&B B&amp;B Air Care">
-		<meta name="keywords" content="bnb, Alex, AC Repair">
+		<title>Home</title>
+		<meta name="author" content="Alex Burrell">
+		<meta name="description" content="">
+		<meta name="keyw style=ords" content="HVAC, HVAC repair">
 		<style>
-			.boxxie {
-				left: 10%;
-				margin-top: 5%;
-				border: 5px green;
+			body {
+				background-color: gray;
 			}
-			.textblock {
-				border: 5px gray;
+			#banner {
+				position: fixed;
+				background-color: maroon;
+				border: 5px solid black;
+				width: 80%;
+				left: 0px;
+				top: 10px;
+				padding-left: 5%;
+				padding-right: 5%;
+				padding-top: 32pt;
+				padding-bottom: 32pt;
+				margin-left: 5%;
+				z-index: 10;
+			}
+			#left {
+				position: absolute;
+				/* background-color: blue;
+				border: 3px solid black; */
+				left: 10%;
+				top: 100pt;
+				width: 36%;
+				padding-bottom: 1in;
+			}
+			#right {
+				position: absolute;
+				/* background-color: lightblue;
+				border: 3px solid gray; */
+				left: 54%;
+				top: 100pt;
+				width: 36%;
+			}
+			.box {
+				margin-left: 20%;
+				margin-top: 1in;
+				background-color: lightgreen;
+				/* border: 2px solid green; */
+				width: 40%;
+				padding-top: 40%;
+			}
+			#textblock {
+				margin-left: 25%;
+				margin-top: 1in;
+				margin-bottom: 1in;
+				/* border: 2px solid green; */
+				width: 40%;
+			}
+			.banner_item {
+				font-size: 18px;
+				margin-left: 5%;
+			}
+			.aircare {
+				font-size: 12px;
+				position: relative;
+				top: 5px;
+			}
+			#banner_items {
+				position: relative;
+				bottom: 16px;
 			}
 		</style>
 	</head>
 	<body>
-		<div style="position: fixed; height: 15%; min-height: 1in;">B&amp;B Air Care</div>
-		<div class="boxxie">Hoof</div>
-		<div class="boxxie">Woof</div>
-		<div class="textblock">This is a sample block of text used to fill in this div. I love you, you love me! We're all one big family. With a knick-knack, paddie-whack, give a dog a bone! This old man came rolling home.</div>
+		<div id="banner"><span style="font-size: 28px;">BB<br> A<span class="aircare">ir</span>/C<span class="aircare">are</span></span><span style="margin-left: 2in;"></span>
+			<span id="banner_items"><span class="banner_item">Home</span><a href="about.html" class="banner_item">About</a><a href="contact.html" class="banner_item">Contact Us</a><a href="pricing.html" class="banner_item">Pricing</a></span>
+		</div>
+		<div id="left">
+			<div class="box">Box 1</div>
+			<div class="box">Box 2</div>
+		</div>
+		<div id="right">
+			<div id="textblock">This is a block of text. I'm only adding it so you can see how a box like this does. I will now copy the bill of rights into here. Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</div>
+		</div>
+	</body>
+</html>
